@@ -650,6 +650,11 @@ namespace Kitronik_Move_Motor {
     We do this to help hide the complexity of tolerance and similar from novice users, 
     but if you are an expert reading this comment then feel free to play with this functionand see what it does.
     **/
+    //% subcategory="Sensors"
+    //% group="Line Following"
+    //% blockId=kitronik_move_motor_line_follower_read_sensor
+    //% block="Line Following sensor calibration"
+    //% weight=75 blockGap=8
     export function equaliseSensorOffsets(): void {
         let rightLineSensor = pins.analogReadPin(AnalogPin.P1)
         let leftLineSensor = pins.analogReadPin(AnalogPin.P2)
